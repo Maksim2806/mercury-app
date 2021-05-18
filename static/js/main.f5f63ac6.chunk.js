@@ -1,0 +1,2 @@
+(this["webpackJsonpmercury-app"]=this["webpackJsonpmercury-app"]||[]).push([[0],{11:function(e,c,n){"use strict";n.r(c);var r=n(1),t=n.n(r),s=n(3),i=n.n(s),p=(n(8),n(9),n(0));var o=function(){return Object(p.jsx)("div",{className:"App",children:Object(p.jsx)("p",{children:"Hello Mercury"})})};i.a.render(Object(p.jsx)(t.a.StrictMode,{children:Object(p.jsx)(o,{})}),document.getElementById("root"))},8:function(e,c,n){},9:function(e,c,n){}},[[11,1,2]]]);
+//# sourceMappingURL=main.f5f63ac6.chunk.js.map
