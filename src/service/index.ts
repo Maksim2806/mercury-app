@@ -2,7 +2,6 @@ import { API_KEY, API_BASE_URL } from 'constants/api'
 import { stringify } from 'query-string'
 
 export const INTERNAL_SERVER_ERROR_CODE = 500
-
 class ServerError extends Error {
   code: number
   message: string

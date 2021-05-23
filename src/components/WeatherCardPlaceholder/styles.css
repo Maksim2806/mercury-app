@@ -1,0 +1,18 @@
+.weather-card-placeholder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-card-placeholder__img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 24px;
+}
+
+.weather-card-placeholder__figcaption {
+    font-size: 16px;
+    line-height: 24px;
+    color: #8083A4;
+}

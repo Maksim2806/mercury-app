@@ -1,0 +1,22 @@
+.weather-card {
+    width: 660px;
+    height: 524px;
+    padding: 50px 58px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin: 17px;
+}
+
+.weather-card__title {
+    margin-bottom: 32px;
+    font-size: 32px;
+    line-height: 32px;
+    color: #2C2D76;
+    font-family: 'Ubuntu-Bold';
+}
+
+.weather-card__inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 54px;
+}

@@ -1,0 +1,40 @@
+.app {
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel__wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .carousel {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .carousel__arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+  }
+  
+  .carousel__leftArrow {
+    left: -5%;
+  }
+  
+  .carousel__rightArrow {
+    right: -5%;
+  }
+
+  .carousel__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

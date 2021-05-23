@@ -1,11 +1,11 @@
 import React from 'react'
-import './App.css'
+import { ForecastPage } from 'ForecastPage'
 
-function App () {
+const App = () => {
   return (
-    <div className="App">
-      <p>Hello Mercury</p>
-    </div>
+    <>
+      <ForecastPage />
+    </>
   )
 }
 

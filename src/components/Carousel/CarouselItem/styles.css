@@ -1,0 +1,9 @@
+.carouselItem {
+    width: 174px;
+    height: 238px;
+    margin-right: 10px;
+  }
+  
+  .carouselItem_noMargin {
+    margin-right: 0;
+  }

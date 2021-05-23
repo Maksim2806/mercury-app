@@ -1,21 +1,21 @@
 import api from '.'
 import {
-  CurrentForecastParams,
-  CurrentForecastResponce,
+  DailyForecastParams,
+  DailyForecastResponse,
   HistoricalForecastParams,
-  HistoricalForecastResponce
+  HistoricalForecastResponse
 } from './types/fetchWeatherForecastTypes'
 
 export const fetchHistoricalForecast = async (
   params: HistoricalForecastParams
-) => await api.get<HistoricalForecastResponce>('/onecall/timemachine', params)
+) => await api.get<HistoricalForecastResponse>('/onecall/timemachine', params)
 
-export const fetchCurrentForecast = async (params: CurrentForecastParams) => {
+export const fetchDailyForecast = async (params: DailyForecastParams) => {
   const extendedParams = {
     ...params,
-    exclude: 'minutely,hourly,daily,alerts'
+    exclude: 'minutely,hourly,current,alerts'
   }
-  return await api.get<CurrentForecastResponce>('/onecall', extendedParams)
+  return await api.get<DailyForecastResponse>('/onecall', extendedParams)
 }
 
 export const getImage = (name: string) =>
