@@ -1,0 +1,41 @@
+.input {
+    position: relative;
+    width: 252px;
+    height: 48px;
+    padding: 16px;
+    background: rgba(128, 131, 164, 0.06);
+    border: 2px solid rgba(128, 131, 164, 0.2);
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 42px;
+    text-align: left;
+    color: #8083A4;
+    cursor: pointer;
+}
+
+.input:hover {
+    border: 2px solid #8083A4;
+}
+
+.input:focus {
+    outline: 0;
+    outline-offset: 0;
+    border-color: blue; 
+}
+
+::-webkit-calendar-picker-indicator {
+    color: transparent;
+    opacity: 1;
+    background: url(/src/components/InputDate/assets/calendar.svg) no-repeat center;
+    background-size: auto;
+}
+
+::-webkit-datetime-edit-fields-wrapper {
+    border-color: blue;
+}
+
+@media screen and (max-width: 600px) {
+    .input {
+        margin-top: 24px;
+    }
+}

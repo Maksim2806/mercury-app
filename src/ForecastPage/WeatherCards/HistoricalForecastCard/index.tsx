@@ -30,7 +30,6 @@ const HistoricalForecastCard = () => {
         lon: selectedCity!.value.lon,
         dt: formatDateToUnixTime(selectedDate!)
       })
-      console.log(data)
       setData(data)
     } catch (e) {
       console.log(e)

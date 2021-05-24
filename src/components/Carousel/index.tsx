@@ -2,6 +2,8 @@ import React, { useRef, useCallback } from 'react'
 import { CarouselItem } from './CarouselItem'
 import './styles.css'
 
+import ChevronRight from './assets/chevron-left-1.svg'
+import ChevronLeft from './assets/chevron-left.svg'
 interface Props {
   content: React.ReactNode[];
 }
@@ -12,7 +14,7 @@ const Carousel: React.FC<Props> = ({ content }) => {
   const handleLeftClick = useCallback(() => {
     const scrollLeft = carouselRef.current?.scrollLeft
     carouselRef.current?.scrollTo({
-      left: scrollLeft !== undefined ? scrollLeft - 170 : 0,
+      left: scrollLeft !== undefined ? scrollLeft - 184 : 0,
       behavior: 'smooth'
     })
   }, [carouselRef])
@@ -20,7 +22,7 @@ const Carousel: React.FC<Props> = ({ content }) => {
   const handleRightClick = useCallback(() => {
     const scrollLeft = carouselRef.current?.scrollLeft
     carouselRef.current?.scrollTo({
-      left: scrollLeft !== undefined ? scrollLeft + 170 : 0,
+      left: scrollLeft !== undefined ? scrollLeft + 184 : 0,
       behavior: 'smooth'
     })
   }, [carouselRef])
@@ -32,7 +34,11 @@ const Carousel: React.FC<Props> = ({ content }) => {
           onClick={handleLeftClick}
           className="carousel__arrow carousel__leftArrow"
         >
-          {'<'}
+          <img
+            className="carousel__leftArrowImage"
+            src={ChevronLeft}
+            alt="arrow-left"
+          />
         </div>
         <div className="carousel__container">
           {content.map((item, idx) => {
@@ -49,7 +55,11 @@ const Carousel: React.FC<Props> = ({ content }) => {
           onClick={handleRightClick}
           className="carousel__arrow carousel__rightArrow"
         >
-          {'>'}
+          <img
+            className="carousel__rightArrowImage"
+            src={ChevronRight}
+            alt="right-arrow"
+          />
         </div>
       </div>
     </div>

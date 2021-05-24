@@ -38,17 +38,19 @@ const DailyForecastCard = () => {
 
   const content = useMemo(() => {
     if (!data) return
-    const carouselContent = data.daily.map(({ dt, weather, temp }) => {
-      return (
-        <WeatherCardItem
-          item={{
-            date: formatUnixTimeToDate(dt),
-            iconName: weather[0].icon,
-            temperature: temp.day
-          }}
-        />
-      )
-    })
+    const carouselContent = data.daily
+      .slice(0, -1)
+      .map(({ dt, weather, temp }) => {
+        return (
+          <WeatherCardItem
+            item={{
+              date: formatUnixTimeToDate(dt),
+              iconName: weather[0].icon,
+              temperature: temp.day
+            }}
+          />
+        )
+      })
     return <Carousel content={carouselContent} />
   }, [data])
   return (

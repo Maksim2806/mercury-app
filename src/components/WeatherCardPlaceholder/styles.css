@@ -16,3 +16,9 @@
     line-height: 24px;
     color: #8083A4;
 }
+
+@media screen and (max-width: 600px) {
+    .weather-card-placeholder__figcaption {
+        text-align: center;
+    }
+}

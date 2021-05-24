@@ -14,9 +14,38 @@
     color: #2C2D76;
     font-family: 'Ubuntu-Bold';
 }
-
 .weather-card__inputs {
     display: flex;
     justify-content: space-between;
     margin-bottom: 54px;
+}
+
+.weater-card__content {
+    height: 238px;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .weather-card:first-child {
+        width: 300px;
+        height: 464px;
+        padding: 32px 24px;
+    }
+    .weather-card:last-child {
+        width: 300px;
+        height: 576px;
+        padding: 32px 24px;
+    }
+    .weather-card__inputs {
+        flex-direction: column;
+        height:fit-content;
+        margin-bottom: 30px;
+    }
+    .weather-card__title {
+        margin-bottom: 32px;
+        font-size: 32px;
+        line-height: 32px;
+        color: #2C2D76;
+        font-family: 'Ubuntu-Bold';
+    }
 }

@@ -1,67 +1,95 @@
 .forecastPage {
-    width: 100%;
-    min-height: 100vh;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #373AF5;
-    background-image: url(assets/Academy-WeatherForecast-Bg-buttom.png), url(assets/Academy-WeatherForecast-Bg-up.png);
-    background-image: 
-      -webkit-image-set(
-        url(assets/Academy-WeatherForecast-Bg-up.png) 1x,
-        url(assets/Academy-WeatherForecast-Bg-up@2x.png) 2x,
-      );
-      background-image: 
-      -webkit-image-set(
-        url(assets/Academy-WeatherForecast-Bg-buttom.png) 1x,
-        url(assets/Academy-WeatherForecast-Bg-buttom@2x.png) 2x,
-      );
-    background-image: 
-      image-set(
-        url(assets/Academy-WeatherForecast-Bg-up.png) 1x,
-        url(assets/Academy-WeatherForecast-Bg-up@2x.png) 2x,
-      );
-    background-image: 
-      image-set(
-        url(assets/Academy-WeatherForecast-Bg-buttom.png) 1x,
-        url(assets/Academy-WeatherForecast-Bg-buttom@2x.png) 2x,
-      );
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #373AF5;
+  background-image: url(assets/Academy-WeatherForecast-Bg-buttom.png), url(assets/Academy-WeatherForecast-Bg-up.png);
+  background-image: 
+    -webkit-image-set(
+      url(assets/Academy-WeatherForecast-Bg-up.png) 1x,
+      url(assets/Academy-WeatherForecast-Bg-up@2x.png) 2x,
+    );
+  background-image: 
+    -webkit-image-set(
+      url(assets/Academy-WeatherForecast-Bg-buttom.png) 1x,
+      url(assets/Academy-WeatherForecast-Bg-buttom@2x.png) 2x,
+    );
+  background-image: 
+    image-set(
+      url(assets/Academy-WeatherForecast-Bg-up.png) 1x,
+      url(assets/Academy-WeatherForecast-Bg-up@2x.png) 2x,
+    );
+  background-image: 
+    image-set(
+      url(assets/Academy-WeatherForecast-Bg-buttom.png) 1x,
+      url(assets/Academy-WeatherForecast-Bg-buttom@2x.png) 2x,
+    );
+  background-position: bottom left, top right;
+  background-size: contain, contain;
+  background-repeat: no-repeat, no-repeat;
+}
 
-    background-position: bottom left, top right;
-    background-size: contain, contain;
-    background-repeat: no-repeat, no-repeat;
-  }
+.forecastPage__title {
+  width: 775px;
+  height: 212px;
+  margin-top: 65px;
+  margin-bottom: 60px;
+}
 
-  .forecastPage__title {
-      width: 775px;
-      height: 212px;
-      margin-top: 65px;
-      margin-bottom: 60px;
-  }
+.forecastPage__titleItem {
+  display: flex;
+  font-size: 102px;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-family: 'Ubuntu-Bold';
+}
 
-  .forecastPage__titleItem {
-      display: flex;
-      font-size: 102px;
-      font-weight: 700;
-      color: #FFFFFF;
-      font-family: 'Ubuntu-Bold';
-  }
-  
 .forecastPage__first {
-    justify-content: flex-start;
-    width: 412px;
-    height: 122px;
+  justify-content: flex-start;
+  width: 412px;
+  height: 122px;
 }
 
 .forecastPage__second {
-    justify-content: flex-end;
-    margin-top: -25px;
+  justify-content: flex-end;
+  margin-top: -25px;
 }
 
-  @media screen and (min-width: 320px) {
+@media screen and (max-width:600px) {
+  .forecastPage__title {
+    width: 243px;
+    height: 64px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+  .forecastPage__titleItem {
+    display: flex;
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-family: 'Ubuntu-Bold';
+  }
+  .forecastPage__first {
+    justify-content: flex-start;
+    width: 131px;
+    height: 32px;
+  }
+  .forecastPage__second {
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+}
+
+  
+  
+
+
+  /* @media screen and (min-width: 320px) {
     .container {
         background-size: contain, contain;
     }
 
-  } 
+  }  */

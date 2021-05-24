@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react'
 import { formatDateToString } from 'utils'
-
+import './styles.css'
 interface Props {
     onChange: (date: Date) => void
     value?: Date;
@@ -8,13 +8,18 @@ interface Props {
     placeholder?: string
   }
 
-const DateInput:React.FC<Props> = ({ value, defaultValue, onChange, placeholder = 'select' }) => {
+const DateInput:React.FC<Props> = ({ value, defaultValue, onChange, placeholder = 'Select Date' }) => {
   const handleChange = useCallback((e: any) => {
     onChange(new Date(e.target.value))
   }, [onChange])
 
   return (
-        <input value={value && formatDateToString(value)} type="date" className="input" onChange={handleChange} defaultValue={defaultValue && formatDateToString(defaultValue)} placeholder={placeholder}
+        <input
+          value={value && formatDateToString(value)}
+          type="date" className="input"
+          onChange={handleChange}
+          defaultValue={defaultValue && formatDateToString(defaultValue)}
+          placeholder={placeholder}
     />
   )
 }

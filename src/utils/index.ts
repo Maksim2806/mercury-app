@@ -15,3 +15,20 @@ export const formatDateToString = (date: Date) => {
   const day = date.getDate()
   return `${year}-${makeDateDoubleSymbol(month)}-${makeDateDoubleSymbol(day)}`
 }
+
+export const formatFahrenheitToCelsius = (temp: number) => {
+  const calc = temp - 273.15
+  return Math.round(calc)
+}
+
+export const formatDateToDesiredValue = (date: Date) => {
+  const getFormatDate = date.toLocaleString('en-US', {
+    day: 'numeric',
+    year: 'numeric',
+    month: 'long'
+  })
+  const day = getFormatDate.slice(3, 6)
+  const month = getFormatDate.slice(0, 3)
+  const year = getFormatDate.slice(8)
+  return `${day} ${month} ${year}`
+}
