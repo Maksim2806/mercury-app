@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/mercury-app/static/css/main.e38b35eb.chunk.css",
-    "main.js": "/mercury-app/static/js/main.c09ab48b.chunk.js",
-    "main.js.map": "/mercury-app/static/js/main.c09ab48b.chunk.js.map",
+    "main.css": "/mercury-app/static/css/main.32779f36.chunk.css",
+    "main.js": "/mercury-app/static/js/main.6415aa45.chunk.js",
+    "main.js.map": "/mercury-app/static/js/main.6415aa45.chunk.js.map",
     "runtime-main.js": "/mercury-app/static/js/runtime-main.d3c0b17d.js",
     "runtime-main.js.map": "/mercury-app/static/js/runtime-main.d3c0b17d.js.map",
     "static/js/2.c1595bcf.chunk.js": "/mercury-app/static/js/2.c1595bcf.chunk.js",
     "static/js/2.c1595bcf.chunk.js.map": "/mercury-app/static/js/2.c1595bcf.chunk.js.map",
     "index.html": "/mercury-app/index.html",
-    "static/css/main.e38b35eb.chunk.css.map": "/mercury-app/static/css/main.e38b35eb.chunk.css.map",
+    "static/css/main.32779f36.chunk.css.map": "/mercury-app/static/css/main.32779f36.chunk.css.map",
     "static/js/2.c1595bcf.chunk.js.LICENSE.txt": "/mercury-app/static/js/2.c1595bcf.chunk.js.LICENSE.txt",
     "static/media/Academy-Weather-bg160.1a743710.svg": "/mercury-app/static/media/Academy-Weather-bg160.1a743710.svg",
     "static/media/styles.css": "/mercury-app/static/media/calendar.b59ccd47.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.d3c0b17d.js",
     "static/js/2.c1595bcf.chunk.js",
-    "static/css/main.e38b35eb.chunk.css",
-    "static/js/main.c09ab48b.chunk.js"
+    "static/css/main.32779f36.chunk.css",
+    "static/js/main.6415aa45.chunk.js"
   ]
 }
