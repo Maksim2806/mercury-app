@@ -29,13 +29,11 @@ const DailyForecastCard = () => {
         lat: selectedOption.value.lat,
         lon: selectedOption.value.lon
       })
-      console.log(data)
       setData(data)
     } catch (e) {
       setError(e)
     }
   }, [])
-  console.log(onSelectCity)
 
   const content = useMemo(() => {
     if (!data) return
