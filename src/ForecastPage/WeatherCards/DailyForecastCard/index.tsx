@@ -35,6 +35,7 @@ const DailyForecastCard = () => {
       setError(e)
     }
   }, [])
+  console.log(onSelectCity)
 
   const content = useMemo(() => {
     if (!data) return
@@ -53,6 +54,7 @@ const DailyForecastCard = () => {
       })
     return <Carousel content={carouselContent} />
   }, [data])
+
   return (
     <WeatherCard
       title="7 Days Forecast"

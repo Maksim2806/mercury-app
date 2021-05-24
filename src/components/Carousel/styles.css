@@ -33,9 +33,16 @@
 
 @media screen and (max-width:600px) {
   .carousel__leftArrowImage{
-    visibility: hidden;
+    display: none;
   }
   .carousel__rightArrowImage{
-    visibility: hidden;
+    display: none;
   }
+  .carousel {
+    overflow-x: scroll;
+  }
+  ::-webkit-scrollbar {
+    display: none;
 }
+}
+
