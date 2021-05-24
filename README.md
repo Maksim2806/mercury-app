@@ -10,4 +10,6 @@ The main difficulty is the time limit.
 
 I tried to make a working application as soon as possible, omitting the pixel perfect. if I had more time, I would do everything better.
 
+Unfortunately, I didn't have time with the layout, because I focused on writing logic.
+
 Summing up, I want to say that the task seemed very interesting to me. It covers the main aspects of the web developer profession. Regardless of your decision, thanks for the experience provided, I do not intend to dwell on this, I will develop further, because it is very exciting and interesting.
