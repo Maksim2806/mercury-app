@@ -1,0 +1,12 @@
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.error-container__message {
+    font-family: 'Ubuntu-Bold';
+    color: crimson;
+}

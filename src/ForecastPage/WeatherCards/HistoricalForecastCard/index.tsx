@@ -8,6 +8,8 @@ import { HistoricalForecastResponse } from 'service/types/fetchWeatherForecastTy
 import { fetchHistoricalForecast } from 'service/fetchWeatherForecast'
 import { formatDateToUnixTime, formatUnixTimeToDate } from 'utils'
 import { WeatherCardItem } from 'components/WeatherCardItem'
+import { Loader } from 'components/Loader'
+import { ErrorContainer } from 'components/ErrorContainer'
 
 interface ICityOption extends IOption {
   value: {
@@ -19,11 +21,14 @@ interface ICityOption extends IOption {
 const HistoricalForecastCard = () => {
   const [data, setData] = useState<HistoricalForecastResponse | undefined>()
   const [error, setError] = useState<IServerError | undefined>()
+  const [isLoading, setIsLoading] = useState<boolean>(false)
   const [selectCityValue, setSelectCityValue] =
     useState<ICityOption | undefined>()
   const [selectedDateValue, setSelectedDateValue] = useState<Date | undefined>()
 
   const fetchData = useCallback(async (selectedCity, selectedDate) => {
+    setIsLoading(true)
+    setError(undefined)
     try {
       const data = await fetchHistoricalForecast({
         lat: selectedCity!.value.lat,
@@ -32,9 +37,9 @@ const HistoricalForecastCard = () => {
       })
       setData(data)
     } catch (e) {
-      console.log(e)
-
       setError(e)
+    } finally {
+      setIsLoading(false)
     }
   }, [])
 
@@ -54,6 +59,12 @@ const HistoricalForecastCard = () => {
   }, [fetchData, selectCityValue])
 
   const content = useMemo(() => {
+    if (isLoading) {
+      return <Loader />
+    }
+    if (error) {
+      return <ErrorContainer message={error.message}/>
+    }
     if (!data) return
     const {
       current: {
@@ -69,7 +80,7 @@ const HistoricalForecastCard = () => {
       temperature: temp
     }}
   />
-  }, [data])
+  }, [data, isLoading, error])
   return (
     <WeatherCard
       title="Forecast for a Date in the Past"

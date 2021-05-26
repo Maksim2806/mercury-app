@@ -8,6 +8,8 @@ import { fetchDailyForecast } from 'service/fetchWeatherForecast'
 import { Carousel } from 'components/Carousel'
 import { WeatherCardItem } from 'components/WeatherCardItem'
 import { formatUnixTimeToDate } from 'utils'
+import { Loader } from 'components/Loader'
+import { ErrorContainer } from 'components/ErrorContainer'
 
 interface ICityOption extends IOption {
   value: {
@@ -19,11 +21,14 @@ interface ICityOption extends IOption {
 const DailyForecastCard = () => {
   const [data, setData] = useState<DailyForecastResponse | undefined>()
   const [error, setError] = useState<IServerError | undefined>()
+  const [isLoading, setIsLoading] = useState<boolean>(false)
   const [selectCityValue, setSelectCityValue] =
     useState<ICityOption | undefined>()
 
   const onSelectCity = useCallback(async (selectedOption: ICityOption) => {
     setSelectCityValue(selectedOption)
+    setIsLoading(true)
+    setError(undefined)
     try {
       const data = await fetchDailyForecast({
         lat: selectedOption.value.lat,
@@ -32,10 +37,18 @@ const DailyForecastCard = () => {
       setData(data)
     } catch (e) {
       setError(e)
+    } finally {
+      setIsLoading(false)
     }
   }, [])
 
   const content = useMemo(() => {
+    if (isLoading) {
+      return <Loader />
+    }
+    if (error) {
+      return <ErrorContainer message={error.message} />
+    }
     if (!data) return
     const carouselContent = data.daily
       .slice(0, -1)
@@ -51,7 +64,7 @@ const DailyForecastCard = () => {
         )
       })
     return <Carousel content={carouselContent} />
-  }, [data])
+  }, [data, isLoading, error])
 
   return (
     <WeatherCard
