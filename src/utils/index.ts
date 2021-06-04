@@ -22,13 +22,14 @@ export const formatFahrenheitToCelsius = (temp: number) => {
 }
 
 export const formatDateToDesiredValue = (date: Date) => {
-  const getFormatDate = date.toLocaleString('en-US', {
+  const formatedDate = date.toLocaleString('en-US', {
     day: 'numeric',
     year: 'numeric',
     month: 'long'
   })
-  const day = getFormatDate.slice(3, 6)
-  const month = getFormatDate.slice(0, 3)
-  const year = getFormatDate.slice(8)
-  return `${day} ${month} ${year}`
+  const formatedDateAsArray = formatedDate.split(' ')
+  const [month, day, year] = formatedDateAsArray
+  const formatedDay = day.slice(0, -1)
+
+  return `${formatedDay} ${month} ${year}`
 }
