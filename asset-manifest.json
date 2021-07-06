@@ -1,27 +1,29 @@
 {
   "files": {
-    "main.css": "/mercury-app/static/css/main.65ce3f9b.chunk.css",
-    "main.js": "/mercury-app/static/js/main.a0cb6d07.chunk.js",
-    "main.js.map": "/mercury-app/static/js/main.a0cb6d07.chunk.js.map",
+    "main.css": "/mercury-app/static/css/main.8fe116b3.chunk.css",
+    "main.js": "/mercury-app/static/js/main.c61f2cae.chunk.js",
+    "main.js.map": "/mercury-app/static/js/main.c61f2cae.chunk.js.map",
     "runtime-main.js": "/mercury-app/static/js/runtime-main.d3c0b17d.js",
     "runtime-main.js.map": "/mercury-app/static/js/runtime-main.d3c0b17d.js.map",
-    "static/js/2.c1595bcf.chunk.js": "/mercury-app/static/js/2.c1595bcf.chunk.js",
-    "static/js/2.c1595bcf.chunk.js.map": "/mercury-app/static/js/2.c1595bcf.chunk.js.map",
+    "static/js/2.de8445e0.chunk.js": "/mercury-app/static/js/2.de8445e0.chunk.js",
+    "static/js/2.de8445e0.chunk.js.map": "/mercury-app/static/js/2.de8445e0.chunk.js.map",
     "index.html": "/mercury-app/index.html",
-    "static/css/main.65ce3f9b.chunk.css.map": "/mercury-app/static/css/main.65ce3f9b.chunk.css.map",
-    "static/js/2.c1595bcf.chunk.js.LICENSE.txt": "/mercury-app/static/js/2.c1595bcf.chunk.js.LICENSE.txt",
-    "static/media/Academy-Weather-bg160.1a743710.svg": "/mercury-app/static/media/Academy-Weather-bg160.1a743710.svg",
-    "static/media/styles.css": "/mercury-app/static/media/calendar.b59ccd47.svg",
+    "service-worker.js": "/mercury-app/service-worker.js",
+    "service-worker.js.map": "/mercury-app/service-worker.js.map",
+    "static/css/main.8fe116b3.chunk.css.map": "/mercury-app/static/css/main.8fe116b3.chunk.css.map",
+    "static/js/2.de8445e0.chunk.js.LICENSE.txt": "/mercury-app/static/js/2.de8445e0.chunk.js.LICENSE.txt",
+    "static/media/Academy-Weather-bg160.c93ab75c.svg": "/mercury-app/static/media/Academy-Weather-bg160.c93ab75c.svg",
+    "static/media/styles.css": "/mercury-app/static/media/calendar.5fd62a23.svg",
     "static/media/index.css": "/mercury-app/static/media/Ubuntu-Regular.5d534041.ttf",
-    "static/media/chevron-bottom.a5408ea9.svg": "/mercury-app/static/media/chevron-bottom.a5408ea9.svg",
-    "static/media/chevron-left-1.d8b7c444.svg": "/mercury-app/static/media/chevron-left-1.d8b7c444.svg",
-    "static/media/chevron-left.668da982.svg": "/mercury-app/static/media/chevron-left.668da982.svg",
-    "static/media/chevron-top.01db9ee1.svg": "/mercury-app/static/media/chevron-top.01db9ee1.svg"
+    "static/media/chevron-bottom.5679d425.svg": "/mercury-app/static/media/chevron-bottom.5679d425.svg",
+    "static/media/chevron-left-1.28185880.svg": "/mercury-app/static/media/chevron-left-1.28185880.svg",
+    "static/media/chevron-left.552d00c1.svg": "/mercury-app/static/media/chevron-left.552d00c1.svg",
+    "static/media/chevron-top.65622208.svg": "/mercury-app/static/media/chevron-top.65622208.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d3c0b17d.js",
-    "static/js/2.c1595bcf.chunk.js",
-    "static/css/main.65ce3f9b.chunk.css",
-    "static/js/main.a0cb6d07.chunk.js"
+    "static/js/2.de8445e0.chunk.js",
+    "static/css/main.8fe116b3.chunk.css",
+    "static/js/main.c61f2cae.chunk.js"
   ]
 }

@@ -1,0 +1,32 @@
+{
+  "name": "Weather Forecast PWA",
+  "short_name": "WF PWA",
+  "theme_color": "#373af5",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": ".",
+  "icons": [
+      {
+          "src": "icons8-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+      },
+      {
+          "src": "icons8-128.png",
+          "sizes": "128x128",
+          "type": "image/png"
+      },
+      {
+          "src": "icons8-256.png",
+          "sizes": "256x256",
+          "type": "image/png"
+      },
+      {
+          "src": "icons8-512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+      }
+  ]
+}
